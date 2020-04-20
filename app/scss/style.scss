@@ -1,2 +1,44 @@
-@import 'vars';
-@import 'global';
+@import "vars";
+@import "global";
+
+.container-header {
+  max-width: 1470px;
+}
+.header {
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: rgba(255, 255, 255, 0.902);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__link {
+    & + .header__link {
+      margin-left: 26px;
+    }
+    & a {
+      font-size: 14px;
+      @include fw600;
+      text-transform: uppercase;
+      color: $text;
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s;
+      &:hover,
+      :focus {
+        color: $gold;
+        border-bottom: 1px solid $gold;
+      }
+    }
+    &--active a {
+      color: $gold;
+      border-bottom: 1px solid $gold;
+    }
+  }
+}
