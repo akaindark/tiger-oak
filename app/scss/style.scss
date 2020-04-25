@@ -1,6 +1,8 @@
 @import "vars";
 @import "global";
 
+
+/* ========HEADER======== */
 .container-header {
   max-width: 1470px;
 }
@@ -41,4 +43,78 @@
       border-bottom: 1px solid $gold;
     }
   }
+}
+
+.section{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.title{
+  font-size: 60px;
+  line-height: 70px;
+  @include fw300;
+  color: $gold;
+  margin-bottom: 20px;
+}
+.text{
+  font-size: 20px;
+  line-height: 28px;
+  @include fw300;
+  color: $text;
+  margin-bottom: 50px;
+}
+.magazine{
+  display: inline-block;
+  & +li{
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+}
+.btn{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $gold;
+  transition: all .4s;
+  &:hover{
+    background-color: #000;
+  }
+}
+.content{
+  max-width: 620px;
+  text-align: center;
+}
+
+/* ========SEATTLE======== */
+.seattle{
+  background-image: url(../images/seattlebg.jpg);
+  &__inner{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* ========MINESOTA======== */
+.minnesota{
+  background-image: url(../images/minnesotabg.jpg);
+  background-color: $bg;
+}
+
+/* ========BRIDAL======== */
+.bridal{
+  background-image: url(../images/bridalbg.jpg);
+  &__inner{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* ========EVENTS======== */
+.events{
+  background-image: url(../images/eventsbg.jpg);
+  background-color: $bg;
 }

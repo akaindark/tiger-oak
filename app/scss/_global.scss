@@ -37,6 +37,10 @@ body {
   color: $text;
 }
 .container {
+  max-width: 1470px;
   padding: 0px 15px;
   margin: 0 auto;
+}
+.container-content{
+  max-width: 1630px;
 }
