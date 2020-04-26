@@ -3,15 +3,16 @@
 
 
 /* ========HEADER======== */
-.container-header {
-  max-width: 1470px;
-}
+
 .header {
   width: 100%;
   z-index: 9999;
   top: 0;
   border-bottom: 1px solid #e4e4e4;
   background-color: rgba(255, 255, 255, 0.902);
+  position: fixed;
+  top: 0;
+  left: 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -80,8 +81,16 @@
   border-radius: 50%;
   background-color: $gold;
   transition: all .4s;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   &:hover{
     background-color: #000;
+    path{
+      fill: $gold;
+    }
   }
 }
 .content{
@@ -91,6 +100,7 @@
 
 /* ========SEATTLE======== */
 .seattle{
+  background-color: #f6f7fc;
   background-image: url(../images/seattlebg.jpg);
   &__inner{
     display: flex;
@@ -117,4 +127,50 @@
 .events{
   background-image: url(../images/eventsbg.jpg);
   background-color: $bg;
+}
+
+/* ========FOOTER======== */
+.footer{
+  background-color: $footerbg;
+  padding: 45px 0px;
+  max-height: 200px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.social{
+  &__list{
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+  &__link{
+    display: inline-block;
+    &+ li{
+      margin-left: 55px;
+    }
+  }
+}
+.copy{
+  font-size: 14px;
+  line-height: 28px;
+  color: $text;
+}
+.list{
+  height: 136px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  a{
+    font-size: 14px;
+    line-height: 30px;
+    color: $text;
+  }
+}
+.footer__addres{
+  font-size: 14px;
+  line-height: 30px;
+}
+.list__link{
+  margin-right: 100px;
 }
