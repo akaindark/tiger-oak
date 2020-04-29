@@ -6,7 +6,6 @@
 
 .header {
   width: 100%;
-  z-index: 9999;
   top: 0;
   border-bottom: 1px solid #e4e4e4;
   background-color: rgba(255, 255, 255, 0.902);
@@ -58,6 +57,8 @@
   font-size: 60px;
   line-height: 70px;
   @include fw300;
+}
+.title__home{
   color: $gold;
   margin-bottom: 20px;
 }
@@ -173,4 +174,73 @@
 }
 .list__link{
   margin-right: 100px;
+}
+
+/* ========EVENTS======== */
+.amore{
+  margin-top: 100px;
+  padding: 96px 0;
+  background-color: $goldbg;
+  &__inner{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  &__title{
+    color: #fff;
+    margin-bottom: 60px;
+  }
+  &__video{
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+
+/* ========COUTURE======== */
+.couture{
+  padding: 96px 0;
+  &__inner{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  &__title{
+    max-width: 1100px;
+    color: $title;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+  &__video{
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+
+/* ========COUTURE======== */
+.seattle-brid{
+  background-color: #ebecf0;
+  padding: 96px 0;
+  &__inner{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  &__title{
+    max-width: 1100px;
+    color: $title;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+  &__video{
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
 }
